@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 body {
@@ -11,4 +13,8 @@ body {
     background-image: url(./images/bg.jpg);
     background-size: cover;
     background-position: center;
+}
+
+a {
+    text-decoration: none;
 }
