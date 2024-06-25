@@ -7,6 +7,7 @@
 
 .home_content {
     max-width: 600px;
+    z-index: 1;
 }
 
 .home_content h1 {
@@ -67,6 +68,7 @@
     width: 170px;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .home_socials a {
@@ -87,4 +89,13 @@
 
 .home_socials a:hover {
     box-shadow: 0 0 50px #4717F6;
+}
+
+@media (max-width: 992px) {
+    .home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
 }
