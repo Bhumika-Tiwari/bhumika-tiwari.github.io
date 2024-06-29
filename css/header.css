@@ -22,14 +22,25 @@ header {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: #0e0b168d;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-inner {
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    padding: 0 2rem;
 }
 
 .navbar .logo a {
@@ -77,19 +88,18 @@ header {
     .navbar .action_btn {
         display: none;
     }
+    .navbar-inner {
+        padding: 0 2rem;
+    }
     .navbar .logo {
-        margin-left: 2rem;
+        margin-left: 0;
     }
     .navbar .toggle_btn {
         display: block;
-        margin-right: 2rem;
+        margin-right: 0;
     }
     .dropdown_menu {
         display: block;
-    }
-    .navbar {
-        background: rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(50px);
     }
 }
 
@@ -107,7 +117,7 @@ header {
     top: 60px;
     width: unset;
     height: 0;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #0e0b168d;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
