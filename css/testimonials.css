@@ -43,6 +43,7 @@
     border-radius: 10px;
     position: relative;
     clip-path: path("M0.024,15.059S4.493-1.094,18,0H255s18.252,2.21,18,18V49s-0.492,24.1,22.7,24.046L336,73s15.362-.987,15,18V225s-0.48,12.912-15,13H17s-17.744-1.589-17-18Z");
+    text-align: left;
 }
 
 .quote-icon {
@@ -65,12 +66,20 @@
 .stars {
     color: orange;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-@media screen and (max-width: 960px) {
+/* RESPONSIVENESS */
+@media screen and (max-width: 992px) {
     .col {
         flex: 100%;
         max-width: 80%;
+        padding: 10px;
+    }
+    
+    .testimonial {
+        padding: 20px;
     }
 }
 
@@ -78,5 +87,10 @@
     .col {
         flex: 100%;
         max-width: 100%;
+        padding: 10px;
+    }
+
+    .testimonial {
+        padding: 15px;
     }
 }
